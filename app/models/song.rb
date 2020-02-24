@@ -4,4 +4,5 @@ class Song < ActiveRecord::Base
     self.artist = Artist.find_or_create_by(name: artist[:name])
     self.artist.update(artist)
   end
+  
 end
